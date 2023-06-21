@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="./autre/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./autre/image/téléchargement.png" width="120px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Nos Formations
+                </a>
+                <ul class="dropdown-menu" style="background-color:rgb(42, 42, 84);">
+                  <li><a class="dropdown-item" href="#" style="color: white;">Angular/SpringBoot</a></li>
+                  <li><a class="dropdown-item" href="#"style="color: white;">Fullstack js</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"style="color: white; ">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" style="color: white; ">Contact</a>
+              </li> 
+
+              
+            </ul>
+            <form style="margin-right: 2%;" class="search">
+              <input   class="form-control me-2" type="search" placeholder="Search"  > 
+            </form>
+             
+             
+
+            <form action="./log.html" class="d-flex" role="search">
+              
+              <button  class="btn btn-outline-success" type="submit" id="log" style="background-color: rgb(174, 41, 63); color: white;border: 0; " >Login
+                
+             
+             
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br><br>
+      <div style="width: 50%; margin: auto;" id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" ">
+            <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cavatnbucket.s3.eu-west-3.amazonaws.com/items/572751/97901671885816.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://devskiller.com/wp-content/uploads/2020/09/screen-html5-devs.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+<br><br><br>
+      <div class="container" >
+        <div class="row">
+          <div class="col-3"style="padding-left: 3%;" ><img src="./autre/image/ang.png" alt=""></div>
+          <div class="col" style="margin-top: 30px; font-family: Arial, Helvetica, sans-serif;" >Angular est un framework open source JavaScript développé par Google. Ce framework est utilisé pour développer des applications web et mobile. Avec cette technologie, on réalise des interfaces de type monopage ou “one page” qui fonctionnent sans rechargement de la page web. <br>
+
+            Angular propose un ensemble de conventions et d’outils pour délimiter les bases d’une solution. Les développements sont ainsi optimisés, s’effectuent plus rapidement et de manière plus sûre. <br>
+            
+            En tant que langage open source, il est régulièrement alimenté et enrichi par une communauté importante de contributeurs. Ces derniers aident à l’amélioration du framework dans le temps grâce des à des mises à jour récurrentes..</div>
+
+</div>
+<div class="row"style="margin-top: 70px;">
+  <div class="col-3" ><img src="./autre/image/spring-boot-.png" width="250px"></div>
+<div class="col" style="font-family: Arial, Helvetica, sans-serif;">Java Spring Framework (Spring Framework) est une infrastructure open souce d'entreprise couramment utilisée qui permet de créer des applications autonomes de production qui fonctionnent sur la machine virtuelle Java (JVM). <br>Java Spring Boot (Spring Boot) est un outil qui accélère et simplifie le développement d'applications Web et de microservices avec Spring Framework grâce à trois fonctionnalités principales : <br>1-Configuration automatique <br>2-Approche directive de la configuration <br>3-Possibilité de créer des applications autonomes</div>
+
+</div>
+<div class="row" style="margin-top: 70px; ">
+  
+  <div class="col-3" style="padding-left: 5%;"><img src="./autre/image/téléchargement (1).png" width="200px" alt=""></div>
+  <div class="col" style="font-family: Arial, Helvetica, sans-serif; margin-top: 20px;"> Vue js est un framework progressif pour les interfaces utilisateur pour les apps et sites JavaScript. Il s’agit d’un des frameworks front-end JS les plus populaires. On le compare souvent à React, Angular, Ember, etc. Par leur approche et leur ressemblance, Vue et React partagent de nombreux points communs. Le framework apparaît à l’été 2013. Il est développé par Evan You. Peu à peu, Vue va faire parler de lui et s’imposer chez les développeurs JS.
+
+    Vue est un framework front-end pour créer les interfaces. Il utilise deux éléments clés : le data binding et le DOM.</div>
+</div>
+
+      </div>
+
+         
+    <br><br>
+    <footer  class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+    
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color:  rgb(42, 42, 84);">
+        © 2023 Copyright:
+        <a>Master class</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
